@@ -1,1 +1,1 @@
-A easy way to calculate and generate the favicon hash value.
+### A easy way to calculate and generate the favicon hash value.
