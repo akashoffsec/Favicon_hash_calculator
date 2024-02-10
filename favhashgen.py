@@ -2,10 +2,14 @@ import mmh3
 import requests
 import argparse
 import codecs
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+# Suppress only the InsecureRequestWarning from urllib3 needed for this example
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 def download_favicon(url):
     try:
-        response = requests.get(url)
+        response = requests.get(url, verify=False)
         if response.status_code == 200:
             return response.content
         else:
