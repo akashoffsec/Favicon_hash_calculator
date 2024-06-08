@@ -1,6 +1,8 @@
 ### A easy way to calculate and generate the favicon hash value.
 
 ## Setup installation:
+- `git clone https://github.com/akashdevav/Favicon_hash_calculator.git`
+- `cd /Favicon_hash_calculator`
 - `pip3 install -r requirements.txt`
 - `chmod +x setup.sh`
 - `./setup.sh`
